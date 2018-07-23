@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- <link type="text/css" rel="stylesheet" href="node_modules/normalize.css/normalize.css"> -->
+	<link type="text/css" rel="stylesheet" href="font/iconfont.css">
+	<link type="text/css" rel="stylesheet" href="carousel.css">
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="carousel.js"></script>
+</head>
+<body style="padding: 50px">
+
+	<div class="title">
+		<p>PRODUCE48</p>
+	</div>
+    <!-- 节点属性参数 -->
+	<div class="J_Poster poster-main" data-setting='{
+                                                     "width": 1000,
+													 "height": 320,
+													 "posterWidth":480,
+													 "posterHeight": 320,
+													 "scale": 0.9,
+													 "speed": 500,
+													 "autoPlay": true,
+													 "delay": 3000,
+													 "verticalAlign": "middle"
+													 }'>
+		<div class="poster-btn poster-prev-btn">
+			<i class="iconfont icon-iconset0446"></i>
+		</div>
+		<ul class="poster-list">
+			<li class="poster-item">
+				<a href="#">
+					<img src="img/d.jpg" width="100%">
+				</a>
+			</li>
+			<li class="poster-item">
+				<a href="#">
+					<img src="img/a.jpg" height="100%">
+				</a>
+			</li>
+			<li class="poster-item">
+				<a href="#">
+					<img src="img/b.jpg" width="100%">
+				</a>
+			</li>
+			<li class="poster-item">
+				<a href="#">
+					<img src="img/c.jpg" width="100%">
+				</a>
+			</li>
+			<li class="poster-item">
+				<a href="#">
+					<img src="img/e.jpg" width="100%">
+				</a>
+			</li>
+			<li class="poster-item">
+				<a href="#">
+					<img src="img/f.jpg" width="100%">
+				</a>
+			</li>
+			<li class="poster-item">
+				<a href="#">
+					<img src="img/g.jpg" width="100%">
+				</a>
+			</li>
+			<li class="poster-item">
+				<a href="#">
+					<img src="img/h.jpg" width="100%">
+				</a>
+			</li>
+			<li class="poster-item">
+				<a href="#">
+					<img src="img/i.jpg" width="100%">
+				</a>
+			</li>
+		</ul>
+		<div class="poster-btn poster-next-btn">
+			<i class="iconfont icon-iconset0447"></i>
+		</div>
+	</div>
+
+	<script>
+		
+		$(function(){
+			//定义多个较为繁琐
+			/*var carousel = new Carousel($(".J_Poster").eq(0));
+			var carousel = new Carousel($(".J_Poster").eq(1));*/
+
+			//定义一个类
+			Carousel.init($(".J_Poster"));
+
+			/*Carousel.init($(".J_Poster"),setting);*/
+		});
+
+	</script>
+
+</body>
+</html>
